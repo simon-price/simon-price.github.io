@@ -196,6 +196,34 @@ hr.divider { border: none; border-top: 1px solid #dcdcdc; margin: 2px 0; }
 
 .feedback.show { display: block; }
 
+.feedback-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 17px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  background: var(--chrome);
+  border: 1px solid;
+  border-color: var(--chrome-light) var(--chrome-dark) var(--chrome-dark) var(--chrome-light);
+  cursor: pointer;
+  padding: 0;
+}
+
+.feedback-close:active {
+  border-color: var(--chrome-dark) var(--chrome-light) var(--chrome-light) var(--chrome-dark);
+}
+
+/* leave room so text doesn't run under the close button */
+.feedback .verdict { padding-right: 18px; }
+
 .feedback .verdict { font-weight: bold; display: block; margin-bottom: 3px; }
 .feedback .verdict.right { color: #1f7a1f; }
 .feedback .verdict.wrong { color: #b32020; }
