@@ -1,0 +1,110 @@
+{
+  "title": "Perfect Competition and Monopoly",
+  "course": "Introduction to Microeconomics",
+  "section": "Tests",
+  "kind": "Test",
+  "questionValue": 10,
+  "timeLimit": 60,
+  "questions": [
+    {
+      "id": 1,
+      "type": "truefalse",
+      "text": "A permanent increase in a competitive industry's costs may lead to some firms exiting the industry.",
+      "answer": true,
+      "explanation": "Higher costs reduce profits. In perfect competition, loss-making firms whose price falls below average total cost will leave the industry in the long run until the remaining firms can again earn normal profit."
+    },
+    {
+      "id": 2,
+      "type": "multiplechoice",
+      "text": "In the long run, a firm in perfect competition will earn:",
+      "options": [
+        "Supernormal (economic) profit.",
+        "Normal profit only.",
+        "A persistent economic loss.",
+        "Profit equal to total fixed cost."
+      ],
+      "answer": 1,
+      "explanation": "Free entry and exit competes away any supernormal profit and eliminates losses, so the typical firm earns only normal profit (zero economic profit) in long-run equilibrium."
+    },
+    {
+      "id": 3,
+      "type": "truefalse",
+      "text": "A perfectly competitive firm is a price taker and faces a perfectly elastic demand curve for its output.",
+      "answer": true,
+      "explanation": "Because each firm is tiny relative to the market and sells a homogeneous product, it can sell any quantity at the market price but nothing above it, giving a horizontal (perfectly elastic) demand curve."
+    },
+    {
+      "id": 4,
+      "type": "multiplechoice",
+      "text": "A profit-maximising monopolist produces at the output where:",
+      "options": [
+        "Price equals marginal cost.",
+        "Marginal revenue equals marginal cost.",
+        "Average cost is at a minimum.",
+        "Total revenue is at a maximum."
+      ],
+      "answer": 1,
+      "explanation": "All profit-maximising firms set marginal revenue equal to marginal cost. For a monopolist price exceeds marginal revenue, so price ends up above marginal cost."
+    },
+    {
+      "id": 5,
+      "type": "truefalse",
+      "text": "Under monopoly, price is always equal to marginal cost.",
+      "answer": false,
+      "explanation": "A monopolist faces a downward-sloping demand curve, so marginal revenue lies below price. Setting MR = MC therefore results in a price that is greater than marginal cost, creating allocative inefficiency."
+    },
+    {
+      "id": 6,
+      "type": "multiplechoice",
+      "text": "Which of the following is NOT a feature of a perfectly competitive market?",
+      "options": [
+        "Many buyers and sellers.",
+        "A homogeneous product.",
+        "Barriers to entry.",
+        "Perfect information."
+      ],
+      "answer": 2,
+      "explanation": "Perfect competition assumes free entry and exit, so there are no barriers to entry. The other three features are all standard assumptions of the model."
+    },
+    {
+      "id": 7,
+      "type": "truefalse",
+      "text": "A monopoly can earn supernormal profits in the long run if barriers to entry prevent new firms from competing.",
+      "answer": true,
+      "explanation": "Barriers to entry (such as patents, control of a key resource, or economies of scale) stop rivals from entering, so a monopolist can protect supernormal profits even in the long run."
+    },
+    {
+      "id": 8,
+      "type": "multiplechoice",
+      "text": "Compared with perfect competition, a monopoly typically results in:",
+      "options": [
+        "Lower prices and higher output.",
+        "Higher prices and lower output.",
+        "The same price and output.",
+        "Higher output but the same price."
+      ],
+      "answer": 1,
+      "explanation": "By restricting output to raise price above marginal cost, a monopolist produces less and charges more than a comparable competitive industry, which is the source of the deadweight welfare loss."
+    },
+    {
+      "id": 9,
+      "type": "truefalse",
+      "text": "In the short run a perfectly competitive firm will continue to produce as long as price covers its average variable cost.",
+      "answer": true,
+      "explanation": "If price is below average variable cost the firm cannot cover even its variable costs and should shut down. As long as price is at or above AVC it makes sense to keep producing in the short run to offset some fixed costs."
+    },
+    {
+      "id": 10,
+      "type": "multiplechoice",
+      "text": "Price discrimination by a monopolist requires that the firm can:",
+      "options": [
+        "Sell an identical product to every customer at one price.",
+        "Separate markets and prevent resale between them.",
+        "Face a perfectly elastic demand curve.",
+        "Operate with no market power at all."
+      ],
+      "answer": 1,
+      "explanation": "To charge different prices, the firm must have market power, be able to separate buyers by their willingness to pay, and prevent arbitrage (resale) between the groups."
+    }
+  ]
+}
