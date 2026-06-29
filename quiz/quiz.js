@@ -71,6 +71,11 @@
       flash("Contents: " + n + " questions on " + quiz.title + ".");
     });
 
+    // Close the feedback popup (delegated — the popup is rebuilt each time)
+    el.questionArea.addEventListener("click", function (e) {
+      if (e.target.closest && e.target.closest(".feedback-close")) { hideFeedback(); }
+    });
+
     startTimer();
     render();
   }
@@ -186,14 +191,26 @@
     render();
   }
 
+  // Render the feedback popup with a close button.
+  function renderFeedback(html) {
+    el.feedback.className = "feedback show";
+    el.feedback.innerHTML =
+      '<button class="feedback-close" type="button" title="Close" aria-label="Close">&times;</button>' +
+      html;
+  }
+
+  function hideFeedback() {
+    el.feedback.className = "feedback";
+    el.feedback.innerHTML = "";
+  }
+
   function showFeedback(idx) {
     var q = quiz.questions[idx];
     var ok = state.correct[idx];
-    el.feedback.className = "feedback show";
-    el.feedback.innerHTML =
+    renderFeedback(
       '<span class="verdict ' + (ok ? "right" : "wrong") + '">' +
         (ok ? "✓ Correct." : "✗ Not quite.") +
-      "</span>" + escapeHtml(q.explanation || "");
+      "</span>" + escapeHtml(q.explanation || ""));
   }
 
   function showExplanation() {
@@ -201,9 +218,7 @@
     var q = quiz.questions[idx];
     if (!state.marked[idx]) {
       // Reveal explanation without scoring the answer
-      el.feedback.className = "feedback show";
-      el.feedback.innerHTML =
-        '<span class="verdict">Explanation</span>' + escapeHtml(q.explanation || "");
+      renderFeedback('<span class="verdict">Explanation</span>' + escapeHtml(q.explanation || ""));
     } else {
       showFeedback(idx);
     }
@@ -317,8 +332,7 @@
   }
 
   function flash(msg) {
-    el.feedback.className = "feedback show";
-    el.feedback.innerHTML = '<span class="verdict">Note</span>' + escapeHtml(msg);
+    renderFeedback('<span class="verdict">Note</span>' + escapeHtml(msg));
   }
 
   function showInstructions() {
