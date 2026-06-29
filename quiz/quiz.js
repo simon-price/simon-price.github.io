@@ -136,7 +136,11 @@
     el.slider.value = idx + 1;
     el.prevBtn.disabled = (idx === 0);
     el.markBtn.disabled = state.marked[idx];
-    el.nextBtn.textContent = (idx === quiz.questions.length - 1) ? "Finish" : "→";
+    el.nextBtn.innerHTML = (idx === quiz.questions.length - 1)
+      ? "Finish"
+      : '<svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true">' +
+        '<path d="M7 1 L14 6 L7 11 M14 6 H2" fill="none" stroke="#000" ' +
+        'stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>';
 
     updateStats();
   }
