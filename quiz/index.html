@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WinEcon — Economics Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="window" role="application" aria-label="Economics quiz">
+
+    <!-- Title bar -->
+    <div class="titlebar">
+      <svg class="win-icon" viewBox="0 0 16 16" aria-hidden="true">
+        <rect x="1" y="1" width="14" height="14" rx="1" fill="#dfe8f6" stroke="#5a78b0"/>
+        <polyline points="2,12 6,8 9,10 14,3" fill="none" stroke="#c0392b" stroke-width="1.6"/>
+        <circle cx="11" cy="11" r="2" fill="#2d6ee0"/>
+      </svg>
+      <span class="title-text" id="titlebarText">WinEcon / Introduction to Microeconomics / Tests / Perfect Competition and&hellip;</span>
+      <span class="win-buttons">
+        <button title="Minimize" aria-hidden="true">0</button>
+        <button title="Maximize" aria-hidden="true">1</button>
+        <button class="close" title="Close" aria-hidden="true">r</button>
+      </span>
+    </div>
+
+    <!-- Main content panel -->
+    <div class="content">
+      <div class="header">
+        <svg class="topic-icon" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="2" fill="#eef3fb" stroke="#5a78b0"/>
+          <polyline points="3,22 10,14 15,18 25,5" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+          <circle cx="20" cy="20" r="4" fill="#2d6ee0"/>
+        </svg>
+        <div class="header-text">
+          <span class="kind-label" id="kindLabel">Test</span>
+          <h1 id="quizTitle">Perfect Competition and Monopoly</h1>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats" id="statsBar">
+        <span>Question value: <span class="stat-value" id="statValue">10%</span></span>
+        <span>Answered: <span class="stat-value" id="statAnswered">0/10</span></span>
+        <span>Score: <span class="stat-value" id="statScore">0%</span></span>
+        <span>Time: <span class="stat-value" id="statTime">0:00 / 1:00</span></span>
+      </div>
+      <hr class="divider">
+
+      <!-- Question -->
+      <div class="question-area" id="questionArea">
+        <p class="question-text" id="questionText"></p>
+        <ul class="options" id="optionsList"></ul>
+        <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <span class="counter" id="counter">1 of 10</span>
+        <input type="range" class="slider" id="slider" min="1" max="10" value="1" aria-label="Jump to question">
+        <button class="win-btn" id="markBtn">Mark</button>
+        <button class="win-btn" id="explainBtn">Explain</button>
+        <button class="win-btn" id="topicBtn">Topic</button>
+        <button class="nav-arrow" id="prevBtn" title="Previous question">&larr;</button>
+        <button class="nav-arrow" id="nextBtn" title="Next question">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- Status footer -->
+    <div class="statusbar">
+      <button class="pill" id="instructionsBtn">Instructions</button>
+      <div class="center-badge" title="WinEcon"></div>
+      <button class="pill" id="contentsBtn">Contents &#9650;</button>
+    </div>
+
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
